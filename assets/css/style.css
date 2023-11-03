@@ -3,6 +3,9 @@
     --header-renk: #434ccc;
     --body-renk: #f2f2f2;
     --yazi-renk: #fff;
+    --yazi-altrenatif-renk: #000;
+    --tags-yazi-renk: #434ccc;
+    --button-arka-plan: #434ccc;
 }
 header{
     background-color: var(--header-renk);
@@ -34,14 +37,186 @@ header{
     font-size: 20px;
     line-height: 32px;
 }
+/* main start */
+main{
+    background-color: var(--body-renk);
+}
+/* hero start */
+.heroImg{
+    background-color: #fff;
+    padding-top: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+}
+.heroImg img{
+    width: 286px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.heroImgText{
+    margin-left: 30px;
+}
+.bold{
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.heroImgText h3{
+    margin-bottom: 20px;
+    width: 14ch;
+}
+.text{
+    width: 26ch;
+    opacity: 0.5;
+    padding-bottom: 16px;
+}
+.cizgi{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.information img{
+    width: 32px;
+    height: 32px;
+    margin-top: 24px;
+}
+.cayla{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.cayla span{
+    margin-top: 30px;
+    opacity: 0.5;
+}
+.cayla p{
+    margin-top: 30px;
+}
+.learnMore{
+    color: var(--yazi-altrenatif-renk);
+    margin-left: 110px;
+}
+.dolorem{
+    background-color: #fff;
+    padding-top: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+}
+.dolorem img{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
 
-
-
-
-
+.facilisi{
+    background-color: #fff;
+    padding-top: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+}
+.facilisi img{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.buttonSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.buttonSection a{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding-top: 12px;
+    color: #434ccc;
+}
+.buttonSection .one{
+    color: var(--yazi-renk);
+    background-color: var(--button-arka-plan);
+}
+.left{
+    padding-top: 14px;
+    padding-left: 18px;
+}
+.right{
+    padding-top: 14px;
+    padding-left: 18px;
+}
+/* categories start */
+.categoriesText input{
+    margin-bottom: 24px;
+    padding-left: 10px;
+    width: 100%;
+    height: 46px;
+}
+.categoriesText h4{
+    margin-bottom: 40px;
+}
+.categoriesText p{
+    opacity: 0.5;
+}
+.card a{
+    color: var(--yazi-altrenatif-renk);
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.categoriesText{
+    margin-bottom: 60px;
+}
+/* categories end */
+/* post start */
+.post img{
+    width: 70px;
+    height: 48px;
+    margin-top: 6px;
+}
+.postUp{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 48px;
+}
+.postText p{
+    opacity: 0.5;
+}
+.postCenter{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 48px;
+}
+.postDown{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 72px;
+}
+/* post end */
+/* tags start */
+.tags h4{
+    margin-bottom: 40px;
+}
+.tagsGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.tagsGrid a{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 6px;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--tags-yazi-renk);
+}
+/* tags end */
 
 /* desktop start */
 @media(min-width: 1170px){
+    /* header start */
     .container{
         width: 1170px;
         margin: 0 auto;
@@ -68,15 +243,74 @@ header{
         color: var(--yazi-renk);
         margin-left: 40px;
     }
+    /* header end */
+    /* hero left star */
+    /* flex classi desktopa ozel bir class mobile bolumunde calismayacak */
+    .flex{
+        display: flex;
+        gap: 40px;
+    }
+    .hero{
+        margin-top: 20px;
+    }
     .headerText h2{
         font-size: 72px;
         line-height: 80px;
     }
-
-
-
+    .heroImg{
+        width: 834px;
+    }
+    .heroImgText h3{
+        font-size: 56px;
+        line-height: 64px;
+        width: 28ch;
+    }
+    .text{
+        width: 70ch;
+    }
+    .heroImg .firca{
+        width: 770px;
+    }
+    .cayla{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
+    }
+    .information img{
+        margin-top: 26px;
+        margin-right: 36px;
+    }
+    .learnMoreDesktop{
+        margin-top: 28px;
+        margin-right: auto;
+        color: var(--yazi-altrenatif-renk);
+    }
+    .dolorem{
+        width: 834px;
+    }
+    .sandalye{
+        width: 770px;
+    }
+    .facilisi{
+        width: 834px;
+    }
+    .facilisiImg{
+        width: 770px;
+    }
+    .buttonSection{
+        margin-right: 30px;
+    }
+    /* hero left end */
+    /* categories start */
+    .categoriesDesktop{
+        margin-top: 10px;
+    }
+    /* categories end */
     /* none bolumu */
     .mobileMenu{
+        display: none;
+    }
+    .learnMore{
         display: none;
     }
 }
@@ -90,6 +324,9 @@ header{
         display: none;
     }
     .signUp{
+        display: none;
+    }
+    .learnMoreDesktop{
         display: none;
     }
 }
