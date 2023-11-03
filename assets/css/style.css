@@ -240,6 +240,61 @@ main{
     background-color: var(--button-arka-plan);
     color: var(--yazi-renk);
 }
+/* section yellow end */
+/* footer start */
+.footerLogo{
+    padding-top: 60px;
+}
+footer{
+    background-color: var(--body-renk);
+}
+.logoFooter h4{
+    margin-bottom: 20px;
+}
+.logoFooter p{
+    margin-bottom: 20px;
+}
+.footerMedia{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.footerCard{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+.footerCard h4{
+    margin-bottom: 20px;
+}
+.footerCard p{
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+.footerUp{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.footerText p{
+    opacity: 0.5;
+}
+.footerUp img{
+    margin-top: 6px;
+    width: 70px;
+    height: 48px;
+}
+.footerDown{
+    display: flex;
+    gap: 20px;
+}
+.footerDown img{
+    margin-top: 6px;
+    width: 70px;
+    height: 48px;
+}
 /* desktop start */
 @media(min-width: 1170px){
     /* header start */
@@ -350,6 +405,24 @@ main{
         width: 370px;
         margin-top: 20px;
         height: 50px;
+    }
+    /* section yellow end */
+    /* footer start */
+    .footerItem{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logoFooter p{
+        width: 25ch;
+    }
+    .footerRight p{
+        width: 24ch;
+    }
+
+    .footerEnd{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     /* none bolumu */
     .mobileMenu{
